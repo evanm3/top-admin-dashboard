@@ -86,12 +86,10 @@ body {
 .intro-text {
     padding: 10px;
 }
-.intro-text p,
-.intro-text h2 {
-    line-height: .1rem;
-    margin-top: 25px;
-}
 
+.intro-text p {
+    margin: 10px 0px -22px 0px;
+}
 
 button {
     padding: 10px 25px;
@@ -110,9 +108,11 @@ button {
     background-color: rgb(12, 135, 184);
     grid-column: 1 / 2;
     grid-row: 1 / 3;
-    padding: 10px 0px 0px 20px;
+    padding: 10px 0px 0px 25px;
     color: white;
     z-index: 2;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
 .sidebar-title {
@@ -120,7 +120,7 @@ button {
     padding-bottom: 20px;
 }
 .logo-title {
-    padding: 5px;
+    padding: 5px 25px 5px 15px;
 }
 
 .nav {
@@ -153,9 +153,10 @@ button {
 }
 .projects {
     grid-column: 1 / 2;
+    grid-row: 2/3;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
-    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2% 2%;
     padding-right: 20px;
 }
 
@@ -164,11 +165,11 @@ button {
     grid-template-columns: 2% 1fr;
     grid-template-rows: 3fr 1fr;
     background-color: white;
-    height: 200px;
+    max-height: 350px;
     border-radius: 5px;
     box-shadow: 0px 3px 7px 2px rgba(0,0,0,0.71); 
-    
 }
+
 .card-content {
     padding: 10px;
 }
@@ -211,15 +212,22 @@ button {
     display: grid;
     grid-template-columns: 40px 1fr;
     grid-template-rows: repeat(4, 1fr);
-    align-items: center;
-  
-    padding: 10px 0px 0px 10px;
+    align-items: center;  
 }
+
 .trend-text {
-    /* line-height: .1em; */
+    margin: 0px 0px 0px 0px;
     padding: 5px;
+}
+
+.trend-text p {
+    margin: 0px;
 }
 
 .avatar-one-resize {
     height: 2.5rem;
+}
+
+.card-header {
+    font-weight: bold;
 }
