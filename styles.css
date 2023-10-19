@@ -17,6 +17,14 @@ body {
     margin: 0;
 }
 
+.bold {
+    font-weight: bold;
+}
+
+.pad {
+    padding: 0px 10px;
+}
+
 .sidebar .svg,
 .svg-logo {
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) 
@@ -45,29 +53,36 @@ body {
     align-items: center;
     padding: 10px;
 }
+
 .header-left {
     display: flex;
     align-items: center;
     flex: 1;
 }
+
 .search-bar {
     height: 30px;
     min-width: 100px;
     border-radius: 10px;
     flex: 1;
 }
+
 .header-right {
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
+
 .user-name {
     padding: 5px;
-    text-decoration: underline;
+    cursor: pointer;
+    font-size: 1.25rem;
 }
+
 .solid-line {
     min-width: 18ch;
 }
+
 .introduction-bar {
     grid-column: 1/3;
     grid-row: 2/3;
@@ -77,12 +92,15 @@ body {
     align-items: center;
     padding: 10px;
 }
+
 .large-svg {
    height: 6rem;
 }
+
 .intro-bar-left {
     display: flex;
 }
+
 .intro-text {
     padding: 10px;
 }
@@ -99,6 +117,11 @@ button {
     font-size: 1.25em;
     border: none;
 }
+
+button:hover {
+    cursor: pointer;
+}
+
 .button-container {
     display: flex;
     gap: 20px;
@@ -111,7 +134,7 @@ button {
     padding: 10px 0px 0px 25px;
     color: white;
     z-index: 2;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: bold;
 }
 
@@ -119,8 +142,15 @@ button {
     display: flex;
     padding-bottom: 20px;
 }
+
 .logo-title {
     padding: 5px 25px 5px 15px;
+    cursor: pointer;
+}
+
+.sidebar p,
+.sidebar img {
+    cursor: pointer;
 }
 
 .nav {
@@ -147,15 +177,17 @@ button {
     padding: 25px;
     
 }
+
 .project-title {
     grid-column: 1/2;
     grid-row: 1/2;  
 }
+
 .projects {
     grid-column: 1 / 2;
     grid-row: 2/3;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
     gap: 2% 2%;
     padding-right: 20px;
 }
@@ -179,8 +211,8 @@ button {
     grid-row: 1 / 3;
     background-color: rgb(221, 118, 0);
     border-radius: 5px 0px 0px 5px;
-    
 }
+
 .card-footer {
     grid-row: 2/3;
     grid-column: 2/3;
@@ -189,15 +221,28 @@ button {
     align-items: end;
     padding: 10px;
 }
+
+.card-footer img {
+    cursor: pointer;
+}
+
 .announcements-title {
     grid-column: 2/3;
     grid-row: 1/2;
 }
+
 .announcements {
     grid-column: 2 / 3;
     display: grid;
     grid-template-rows: 1fr 60px 1fr;
-    padding: 10px;
+}
+
+.update-block {
+    border-bottom: 3px solid grey;
+}
+
+.update-block:nth-last-of-type(1) {
+    border-bottom: none;
 }
 
 .update {
@@ -205,19 +250,20 @@ button {
     border-radius: 10px;
     box-shadow: 0px 3px 7px 2px rgba(0,0,0,0.71); 
     padding: 10px;
-
 }
 
 .trending-box {
     display: grid;
-    grid-template-columns: 40px 1fr;
+    grid-template-columns: 50px 1fr;
     grid-template-rows: repeat(4, 1fr);
     align-items: center;  
+    row-gap: 5px;
+    padding-top: 10px;
 }
 
 .trend-text {
     margin: 0px 0px 0px 0px;
-    padding: 5px;
+    padding: 5px 5px 5px 15px;
 }
 
 .trend-text p {
@@ -225,9 +271,10 @@ button {
 }
 
 .avatar-one-resize {
-    height: 2.5rem;
+    height: 3.1279rem;
 }
 
 .card-header {
     font-weight: bold;
+    font-size: 1.25rem;
 }
